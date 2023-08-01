@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Log in - Fabric</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
-    
+    <main class="main">
+        <div class="container main-layout">
+            <section class="form-section">
+                <h1 class="title">Log in</h1>
+                <p class="subtitle">Welcome back! Please login to your account to continue</p>
+
+                <form class="form" id="form">
+                    <div class="input-field">
+                        <input type="email" name="email" class="input-field__input" id="email">
+                        <label class="input-field__label" for="email">Your e-mail</label>
+                        <span class="input-field__error">ext</span>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" name="password" class="input-field__input" id="password">
+                        <label class="input-field__label" for="password">Password</label>
+                        <span class="input-field__error"></span>
+                    </div>
+                    <div>
+                        <label class="input-checkbox">
+
+                            <input type="checkbox" value="remember" name="remember" class="input-checkbox__chb">
+                            <span class="input-checkbox__checkmark"></span>
+                            Remember me
+                        </label>
+                    </div>
+
+
+                    <button type="submit" class="btn-submit">LOG IN</button>
+                </form>
+            </section>
+            <img src="https://img.freepik.com/premium-photo/closeup-texture-natural-beige-fabric-cloth-brown-color-fabric-texture-natural-cotton-linen-textile-material-beige-canvas-background_133187-2958.jpg"
+                class="img-section" alt="Side img">
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
 </body>
+
 </html>

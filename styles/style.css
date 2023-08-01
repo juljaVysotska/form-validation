@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&family=Libre+Baskerville&family=Mako&family=Sintony&family=Tomorrow&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.img-section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 45%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.title {
+  color: #000;
+  font-family: "IBM Plex Serif", "Times New Roman", serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 23px;
+}
+
+.subtitle {
+  color: #5e5e5e;
+  font-family: "Mako", Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+
+.main {
+  height: 100vh;
+}
+.main-layout {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.form-section {
+  width: 50%;
+}
+
+.input-field {
+  border: 1px solid #ac8a8a;
+  padding: 20px 20px;
+  position: relative;
+  height: 72px;
+  padding-top: 30px;
+  margin-bottom: 15px;
+}
+.input-field__label {
+  color: #5e5e5e;
+  font-family: "Mako", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 72px;
+  font-style: normal;
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  transition: 0.3s font-size, 0.3s line-height, 0.3s top;
+}
+.input-field__input {
+  border: unset;
+  color: #000;
+  font-family: "Mako", Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  outline: unset;
+  height: 21px;
+  border-bottom: 1px solid transparent;
+  width: 100%;
+}
+.input-field__input--error {
+  border-bottom: 1px solid red;
+}
+.input-field__input--error ~ span {
+  opacity: 1;
+}
+.input-field__input:focus + .input-field__label, .input-field__label.input-field__filled {
+  top: 11px;
+  font-size: 12px;
+  line-height: 12px;
+}
+.input-field__error {
+  color: red;
+  text-align: right;
+  position: absolute;
+  bottom: 2px;
+  right: 20px;
+  font-family: "Mako", Arial, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0;
+  transition: 0.3s opacity;
+}
+
+.input-checkbox {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #5e5e5e;
+  font-family: "IBM Plex Serif", "Times New Roman", serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+  margin-bottom: 55px;
+}
+.input-checkbox__chb {
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}
+.input-checkbox__chb:checked ~ .input-checkbox__checkmark::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 7px;
+  border-left: 2px solid #5e5e5e;
+  border-bottom: 2px solid #5e5e5e;
+  transform: rotate(-45deg);
+  margin: 4px;
+}
+.input-checkbox__checkmark {
+  display: block;
+  width: 23px;
+  height: 23px;
+  border-radius: 1px;
+  border: 1px solid #5e5e5e;
+  margin-right: 10px;
+}
+
+.btn-submit {
+  -webkit-appearance: unset;
+     -moz-appearance: unset;
+          appearance: unset;
+  border: unset;
+  width: 275px;
+  height: 62px;
+  background: #ac8a8a;
+  cursor: pointer;
+  padding: 18px;
+  text-align: center;
+  color: #fff;
+  font-family: "IBM Plex Serif", "Times New Roman", serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transition: 0.3s opacity ease-in-out;
+}
+.btn-submit:hover {
+  opacity: 0.7;
+}/*# sourceMappingURL=style.css.map */
